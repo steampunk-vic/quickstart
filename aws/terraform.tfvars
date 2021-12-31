@@ -12,7 +12,7 @@ aws_secret_key = ""
 # aws_session_token = ""
 
 # Password used to log in to the `admin` account on the new Rancher server
-rancher_server_admin_password = "password"
+rancher_server_admin_password = ""
 
 # Add a windows node to the workload cluster
 add_windows_node = false

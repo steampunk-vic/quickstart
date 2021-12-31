@@ -110,8 +110,8 @@ resource "aws_instance" "quickstart_node" {
   instance_type = var.instance_type
   subnet_id = "subnet-0123703f0fa8f1979" //Public Subnet 1
 
-  key_name        = aws_key_pair.quickstart_key_pair.key_name
-  security_groups = [aws_security_group.rancher_sg_allowall.name]
+  key_name               = aws_key_pair.quickstart_key_pair.key_name
+  vpc_security_group_ids = [aws_security_group.rancher_sg_allowall.id]
 
   user_data = templatefile(
     join("/", [path.module, "files/userdata_quickstart_node.template"]),

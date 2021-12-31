@@ -39,7 +39,7 @@ docker_version = "20.10"
 
 # Kubernetes version used for creating workload cluster
 # - Must be supported by RKE terraform provider 1.0.1
-workload_kubernetes_version = "v1.21.7-rancher1-1"
+workload_kubernetes_version = "v1.21.5-rancher1-1"
 
 # Version of cert-manager to install, used in case of older Rancher versions
 cert_manager_version = "1.6.1"
